@@ -1,5 +1,5 @@
-import { createApp } from 'vue';
-import App from './App.vue';
+import { createApp } from 'vue'
+import App from './App.vue'
 import router from './router';
 
 import { IonicVue } from '@ionic/vue';
@@ -33,12 +33,10 @@ import '@ionic/vue/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import './theme/core.css';
-import BaseLayout from './components/base/BaseLayout.vue';
 
-const app = createApp(App).use(IonicVue).use(router);
-
-app.component('base-layout', BaseLayout);
+const app = createApp(App)
+  .use(IonicVue)
+  .use(router);
 
 router.isReady().then(() => {
   app.mount('#app');
