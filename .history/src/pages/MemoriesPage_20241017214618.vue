@@ -28,10 +28,8 @@ export default {
     IonThumbnail,
     IonLabel,
   },
-  computed: {
-    memories() {
-      return this.$store.getters.memories;
-    },
+  data() {
+    return {};
   },
 };
 </script>

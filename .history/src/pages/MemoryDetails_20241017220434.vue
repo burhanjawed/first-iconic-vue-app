@@ -22,10 +22,10 @@ export default {
     },
   },
 
-  // watch: {
-  //   $route(currentRoute) {
-  //     this.memoryId = currentRoute.params.id;
-  //   },
-  // },
+  watch: {
+    $route(currentRoute) {
+      this.memoryId = currentRoute.params.id;
+    },
+  },
 };
 </script>
