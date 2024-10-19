@@ -17,7 +17,6 @@ export default {
   methods: {
     saveMemory(memoryData) {
       this.$store.dispatch('addMemory', memoryData);
-      this.$router.replace('/memories');
     },
   },
 };
