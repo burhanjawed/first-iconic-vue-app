@@ -1,7 +1,7 @@
 const config = {
-  appId: 'io.ionic.starter',
+  appId: 'burjawio.ionic.starter',
   appName: 'ionic-first-app',
   webDir: 'dist',
 };
 
-export default config;
+module.exports = config;

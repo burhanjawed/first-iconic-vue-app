@@ -7,7 +7,7 @@
       </ion-item>
       <ion-item>
         <ion-thumbnail slot="start">
-          <img :src="takenImageUrl" alt="" />
+          <img :src="previewImageUrl" alt="" />
         </ion-thumbnail>
         <ion-button type="button" fill="clear" @click="takePhoto"
           ><ion-icon slot="start" :icon="camera"></ion-icon> Take
@@ -54,8 +54,9 @@ export default {
   data() {
     return {
       enteredTitle: '',
+      enteredImageUrl: '',
       enteredDescription: '',
-      takenImageUrl: null,
+      previewImageUrl: null,
       camera,
     };
   },
@@ -68,13 +69,13 @@ export default {
         quality: 60,
       });
 
-      this.takenImageUrl = photo.webPath;
+      this.previewImageUrl = photo.webPath;
     },
 
     submitForm() {
       const memoryData = {
         title: this.enteredTitle,
-        imageUrl: this.takenImageUrl,
+        imageUrl: this.enteredImageUrl,
         description: this.enteredDescription,
       };
 

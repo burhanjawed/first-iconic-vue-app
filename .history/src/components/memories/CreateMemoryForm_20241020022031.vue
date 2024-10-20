@@ -68,7 +68,7 @@ export default {
         quality: 60,
       });
 
-      this.takenImageUrl = photo.webPath;
+      this.previewImageUrl = photo.webPath;
     },
 
     submitForm() {
